@@ -1,0 +1,12 @@
+{
+    "name": "404-starter-api",
+    "compatibility_date": "2025-07-12",
+    "main": "./src/index.ts",
+    "placement": {
+        "mode": "smart"
+    },
+    "compatibility_flags": [
+        "nodejs_compat"
+    ]
+    // refer to cloudflare workers docs for more info https://developers.cloudflare.com/workers/
+}

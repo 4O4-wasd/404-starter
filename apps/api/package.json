@@ -1,0 +1,21 @@
+{
+   "name": "api",
+   "type": "module",
+   "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+      "start": "vite preview",
+      "deploy": "$npm_execpath run build && wrangler deploy",
+      "cf-typegen": "wrangler types ../../packages/api-contract/worker-api.d.ts --env-interface CloudflareBindings"
+   },
+   "dependencies": {
+      "@repo/api-contract": "*",
+      "hono": "^4.8.5"
+   },
+   "devDependencies": {
+      "@cloudflare/vite-plugin": "^1.2.3",
+      "vite": "^6.3.5",
+      "wrangler": "^4.17.0"
+   }
+}
