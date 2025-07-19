@@ -29,7 +29,6 @@ jobs:
            run: |
               touch wrangler.jsonc
               echo '${{ secrets.WRANGLER_JSONC }}' > wrangler.jsonc
-              cat wrangler.jsonc
 
          - name: Build & Deploy Worker
            run: bun run deploy
